@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <MapComponent></MapComponent>
+    <hotel-component/>
   </div>
 </template>
 
 <script>
-import MapComponent from './components/MapComponent.vue';
+import HotelComponent from './components/HotelComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    
-    MapComponent
-}
+    HotelComponent,
+   
+},
+setup() {
+    return {};
+  },
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

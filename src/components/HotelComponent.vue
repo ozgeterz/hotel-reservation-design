@@ -21,71 +21,14 @@
         <h2>Rixos Downtown Hotel (9.0)</h2>
         <button class="turna-hotel-rezerv">Rezervasyon yap</button>
       </div>
-      <img src="../İmage/3406339_810x458.jpg" />
+ 
       <h5>
         The purpose of lorem ipsum is to create a natural looking block of
         text(sentence,paragraph,page,etc.) that doesn't distract from the
         layout. A practice not without controversy,laying out pages with
         meaningless filler text can be.
       </h5>
-      <div class="turna-hotel-card-group">
-        <div class="turna-hotel-card">
-          <img
-            class="card-img-top"
-            width="250px"
-            height="290px"
-            src="../İmage/oda1.jpg"
-            alt="Card image cap"
-          />
-          <div class="turna-hotel-card-body">
-            <h3 class="card-title">Standart Oda</h3>
-            <div class="turna-features-column">
-              <img src="../İmage/check-circle.svg" />
-              <p>Banyo</p>
-            </div>
-            <div class="turna-features-column">
-              <img src="../İmage/check-circle.svg" />
-              <p>İnternet</p>
-            </div>
-            <div class="turna-features-column">
-              <img src="../İmage/check-circle.svg" />
-              <p>Havlu</p>
-            </div>
-            <div class="turna-hotel-card-info">
-              <h5>İki gece için toplam tutardır.</h5>
-              <button class="turna-hotel-card-info-room">Odanı Ayır</button>
-            </div>
-          </div>
-        </div>
-        <div class="turna-hotel-card">
-          <img
-            class="card-img-top"
-            width="250px"
-            height="290px"
-            src="../İmage/oda2.jpg"
-            alt="Card image cap"
-          />
-          <div class="turna-hotel-card-body">
-            <h3 class="card-title">İki Balkonlu Oda(Delux)</h3>
-            <div class="turna-features-column">
-              <img src="../İmage/check-circle.svg" />
-              <p>Banyo</p>
-            </div>
-            <div class="turna-features-column">
-              <img src="../İmage/check-circle.svg" />
-              <p>İnternet</p>
-            </div>
-            <div class="turna-features-column">
-              <img src="../İmage/check-circle.svg" />
-              <p>Havlu</p>
-            </div>
-            <div class="turna-hotel-card-info">
-              <h5>İki gece için toplam tutardır.</h5>
-              <button class="turna-hotel-card-info-room">Odanı Ayır</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <room-info />
       <div class="turna-features">
         <h2>Otel Özellikleri</h2>
         <div class="turna-features-card">
@@ -201,12 +144,16 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
 
 <script>
+import RoomInfo from "./RoomInfo.vue";
 export default {
-  name: "MapComponent",
+  components: { RoomInfo, },
+  name: "HotelComponent",
 };
 </script>
 
@@ -218,6 +165,7 @@ export default {
   text-align: start;
   max-width: 960px;
   padding-inline-start: 10%;
+  height: 100vh;
   gap: 25px;
   &-map {
     &-buton {
@@ -241,29 +189,6 @@ export default {
       display: flex;
       justify-content: space-between;
     }
-
-    &-card {
-      border: 2px solid $bordercolor1;
-      display: flex;
-      margin-top: 20px;
-      &-info {
-        border-top: 2px solid $bordercolor2;
-        display: flex;
-        gap: 180px;
-        &-room {
-          background-color: $butonbackground2;
-          color: $maincolor;
-          border: none;
-          border-radius: 8px;
-          padding: 0px 50px;
-          margin-bottom: 10px;
-          cursor: pointer;
-        }
-      }
-      &-body {
-        padding-inline-start: 2%;
-      }
-    }
     &-rezerv {
       background-color: $butonbackground2;
       color: $maincolor;
@@ -277,6 +202,8 @@ export default {
   &-features {
     border-top: 2px solid $bordercolor2;
     margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
 
     &-card {
       display: grid;
@@ -287,4 +214,6 @@ export default {
     }
   }
 }
+
+
 </style>
