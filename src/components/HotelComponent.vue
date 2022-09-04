@@ -21,7 +21,8 @@
         <h2>Rixos Downtown Hotel (9.0)</h2>
         <button class="turna-hotel-rezerv">Rezervasyon yap</button>
       </div>
-      <img src="../image/hotel1.jpg" class="turna-hotel-img" />
+    
+      <ImageSlider/>
 
       <h5>
         The purpose of lorem ipsum is to create a natural looking block of
@@ -150,8 +151,9 @@
 
 <script>
 import RoomInfo from "./RoomInfo.vue";
+import ImageSlider from "./ImageSlider.vue";
 export default {
-  components: { RoomInfo },
+  components: { RoomInfo, ImageSlider },
   name: "HotelComponent",
 };
 </script>
