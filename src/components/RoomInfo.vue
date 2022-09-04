@@ -4,6 +4,11 @@
       <img class="card-img" src="../İmage/oda1.jpg" alt="Card image cap" />
       <div class="card-body">
         <h3 class="card-title">Standart Oda</h3>
+        <div class="card-content-info">
+          <button class="card-content-buton">Erken Rezervasyon İndirimi</button>
+          <button class="card-content-buton">Her Şey Dahil</button>
+          <button class="card-content-buton">Ücretsiz İptal</button>
+        </div>
         <div class="card-features-column">
           <img src="../İmage/check-circle.svg" />
           <p>Banyo</p>
@@ -29,6 +34,11 @@
       <img class="card-img" src="../İmage/oda2.jpg" alt="Card image cap" />
       <div class="card-body">
         <h3 class="card-title">İki Balkonlu Oda(Delux)</h3>
+        <div class="card-content-info">
+          <button class="card-content-buton">Erken Rezervasyon İndirimi</button>
+          <button class="card-content-buton">Her Şey Dahil</button>
+          <button class="card-content-buton">Ücretsiz İptal</button>
+        </div>
         <div class="card-features-column">
           <img src="../İmage/check-circle.svg" />
           <p>Banyo</p>
@@ -72,55 +82,55 @@
           </div>
           <div class="modal-content-features">
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Sauna</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Market</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Hamam</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Bar</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Masaj</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Açık Restoran</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Spa Merkezi</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Kapalı Restoran</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Otelde Otopark</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Tv Salonu</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Engelli Odaları</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Araç Kiralama</p>
             </div>
             <div class="modal-content-features-column">
-              <img src="../İmage/check.svg" />
+              <img src="../İmage/check.svg" class="check" />
               <p>Havaalanı</p>
             </div>
           </div>
@@ -151,16 +161,31 @@ export default {
   border: 2px solid $bordercolor1;
   display: flex;
   margin-top: 20px;
-  height: 40vh;
+  &-content {
+    &-info {
+      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    &-buton {
+      padding: 0.1rem;
+      color: $butoncolor2;
+      background: $butonbackground3;
+      border: none;
+      font-weight: bold;
+    }
+  }
 
   &-img {
-    width: 250px;
+    max-width: 37%;
   }
   &-info {
     border-top: 2px solid $bordercolor2;
     display: flex;
-    gap: 200px;
+    gap: 180px;
     align-items: center;
+
     &-box {
       &-button {
       }
@@ -169,22 +194,25 @@ export default {
     }
 
     &-room {
-      align-items: center;
       background-color: $butonbackground2;
       color: $maincolor;
       border: none;
       border-radius: 8px;
-      padding: 16px 40px;
       cursor: pointer;
+      padding: 10px;
     }
   }
   &-body {
     padding-inline-start: 2%;
   }
-  &-features-column {
-    display: flex;
+  &-features {
+    &-column {
+      display: flex;
+      font-size: 13px;
+    }
   }
 }
+
 .modal {
   position: fixed;
   display: flex;
@@ -197,7 +225,8 @@ export default {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  padding-left: 22%;
+  padding-left: 24%;
+
   &:target {
     visibility: visible;
     opacity: 1;
@@ -208,7 +237,7 @@ export default {
   }
   &-popup {
     max-width: 60%;
-    height: 100vh;
+
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -225,8 +254,6 @@ export default {
   &-content {
     &-info {
       display: flex;
-
-      gap: 10px;
     }
     &-buton {
       color: $butoncolor2;
@@ -250,17 +277,37 @@ export default {
       align-items: center;
       justify-content: space-evenly;
       &-info {
+        gap: 10px;
       }
       &-button {
-        align-items: center;
         background-color: $butonbackground2;
         color: $maincolor;
         border: none;
         border-radius: 8px;
-        padding: 16px 40px;
+        padding: 2rem;
         cursor: pointer;
       }
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .card-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .check {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-content-features {
+    display: none;
+  }
+}
+@media screen and (max-height: 767px) {
+  .modal-content-features {
+    display: none;
   }
 }
 </style>

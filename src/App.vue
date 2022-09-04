@@ -21,5 +21,8 @@ setup() {
 </script>
 
 <style>
-
+#app{
+  max-width: 1250px;
+  
+}
 </style>
