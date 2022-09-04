@@ -21,7 +21,7 @@
         <h2>Rixos Downtown Hotel (9.0)</h2>
         <button class="turna-hotel-rezerv">Rezervasyon yap</button>
       </div>
-      <img src="../İmage/hotel1.jpg" class="turna-hotel-img" />
+      <img src="../image/hotel1.jpg" class="turna-hotel-img" />
 
       <h5>
         The purpose of lorem ipsum is to create a natural looking block of
@@ -34,55 +34,55 @@
         <h2>Otel Özellikleri</h2>
         <div class="turna-features-card">
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Sauna</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Market</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Hamam</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Bar</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Masaj</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Açık Restoran</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Spa Merkezi</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Kapalı Restoran</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Otelde Otopark</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Tv Salonu</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Engelli Odaları</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Araç Kiralama</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Havaalanı</p>
           </div>
         </div>
@@ -91,55 +91,55 @@
         <h2>Otel Koşulları</h2>
         <div class="turna-features-card">
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Sauna</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Market</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Hamam</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Bar</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Masaj</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Açık Restoran</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Spa Merkezi</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Kapalı Restoran</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Otelde Otopark</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Tv Salonu</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Engelli Odaları</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Araç Kiralama</p>
           </div>
           <div class="turna-features-column">
-            <img src="../İmage/check.svg" class="check" />
+            <img src="../image/check.svg" class="check" />
             <p>Havaalanı</p>
           </div>
         </div>
@@ -216,12 +216,12 @@ export default {
     }
   }
 }
-@media screen and (max-width:1000px) {  
+@media screen and (max-width:1023px) {  
   .check {
     display: none;
   }
 }
-@media screen and (max-width:767px) {  
+@media screen and (max-width:1023px) {  
   .turna-map {
     display: none;
   }
