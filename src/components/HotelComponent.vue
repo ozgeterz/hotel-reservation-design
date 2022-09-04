@@ -14,7 +14,7 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-      <button class="turna-map-buton">Haritada Göster</button>
+      <button class="turna-map-buton" >Haritada Göster</button>
     </div>
     <div class="turna-hotel">
       <div class="turna-hotel-row">

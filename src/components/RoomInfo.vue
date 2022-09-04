@@ -136,7 +136,7 @@
           </div>
           <div class="modal-content-price">
             <div class="modal-content-price-info">
-              <h1>1500TL</h1>
+              <h1 class="modal-content-price-tl">1.500TL</h1>
               <h5>22 gece için toplam tutardır.</h5>
             </div>
 
@@ -161,11 +161,9 @@ export default {
   border: 2px solid $bordercolor1;
   display: flex;
   margin-top: 20px;
- 
 
   &-content {
     &-info {
-     
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
@@ -181,19 +179,20 @@ export default {
 
   &-img {
     max-width: 35%;
-    
   }
   &-info {
     border-top: 2px solid $bordercolor2;
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
+    
     align-items: center;
 
     &-box {
+      
       &-button {
         color: $butonbackground2;
-text-decoration: none;      }
-      
+        text-decoration: none;
+      }
     }
 
     &-room {
@@ -202,7 +201,7 @@ text-decoration: none;      }
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      padding: 10px;
+      padding: 20px 50px;
     }
   }
   &-body {
@@ -236,11 +235,11 @@ text-decoration: none;      }
   }
   &-img {
     width: 100%;
-    height: auto;
+    height: 40%;
   }
   &-popup {
-    max-width: 60%;
-    max-height: 97%;
+    width: 70%;
+    height: 90%;
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -255,15 +254,10 @@ text-decoration: none;      }
     color: $butoncolor2;
   }
   &-content {
-    height: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    &-title {
-      font-size: 1.5vw;
-    }
-    &-commen {
-      font-size: 1vw;
-    }
+  
+    
     &-info {
       display: flex;
       gap: 5px;
@@ -289,11 +283,14 @@ text-decoration: none;      }
     &-price {
       display: flex;
       border-top: 2px solid $bordercolor2;
-  
+
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      &-tl{
+        color:$butonbackground2;
+      }
       &-info {
-        gap: 10px;
+        
         font-size: 1vw;
       }
       &-button {
@@ -301,7 +298,7 @@ text-decoration: none;      }
         color: $maincolor;
         border: none;
         border-radius: 8px;
-
+        padding: 20px 50px;
         cursor: pointer;
       }
     }
