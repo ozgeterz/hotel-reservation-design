@@ -7,7 +7,7 @@
           :key="card.id"
           :style="{ display: active_card.id != card.id ? 'none' : '' }"
         >
-          <img class="art" :src="card.art" />
+          <img class="art" :src="card.img" />
         </div>
         <div class="dots">
           <span
@@ -40,25 +40,21 @@
         auto_animate: true,
         cards: [
           {
-            art:
-              "https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg",
+            img:
+              "https://ucdn.tatilbudur.net/Otel/960x475/selcukhan-hotel_422508.jpg",
             id: 1
           },
           {
-            art:
+            img:
               "https://ucdn.tatilbudur.net/Otel/960x475/ayayorgi-hotel-by-t_312987.jpg",
             id: 2
           },
           {
-            art:
+            img:
               "https://ucdn.tatilbudur.net/Otel/960x475/amon-hotels-belek-16_421454.jpg",
             id: 3
           },
-          {
-            art:
-              "https://ucdn.tatilbudur.net/Otel/960x475/selcukhan-hotel_422508.jpg",
-            id: 4
-          },
+         
         
         ],
         active_slide: 1
@@ -93,7 +89,7 @@
   }
   .dot.active {
     width: 20px;
-    background: lightgray;
+    background: #ffff;
     border-radius: 8px;
   }
   
@@ -111,7 +107,7 @@
   }
   .art {
     width: 100%;
-    height: 60vh;
+    max-height: 70vh;
    
     transition: opacity 0.001s ease;
    

@@ -198,7 +198,7 @@ export default {
       color: $maincolor;
       border: none;
       border-radius: 8px;
-
+      padding: 1em 2.1em 1em;
       margin-bottom: 10px;
       cursor: pointer;
     }

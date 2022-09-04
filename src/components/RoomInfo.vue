@@ -201,7 +201,8 @@ export default {
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      padding: 20px 50px;
+      padding: 1.5em 3.1em 1.5em;
+      
     }
   }
   &-body {
@@ -298,7 +299,7 @@ export default {
         color: $maincolor;
         border: none;
         border-radius: 8px;
-        padding: 20px 50px;
+        padding: 1em 2.1em 1em;
         cursor: pointer;
       }
     }
