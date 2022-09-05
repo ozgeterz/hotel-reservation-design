@@ -158,7 +158,7 @@
   </div>
 </template>
 <script>
-import RoomInfo from "./RoomInfo.vue";
+import RoomInfo from "./RoomCard.vue";
 import ImageSlider from "./ImageSlider.vue";
 export default {
   components: { RoomInfo, ImageSlider },
@@ -224,7 +224,7 @@ export default {
       cursor: pointer;
     }
     &-commen {
-      font-size: 1.2vw;
+      font-size: 1.3em;
       color: $color-dark;
     }
   }

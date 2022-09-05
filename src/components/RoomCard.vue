@@ -181,7 +181,7 @@ export default {
   margin-top: 20px;
   border: 2px solid $color-40;
   &-title {
-    font: normal normal bold 1.8vw Montserrat;
+    font: normal normal bold 20px Montserrat;
   }
   &-content {
     &-info {
@@ -190,7 +190,7 @@ export default {
       gap: 10px;
     }
     &-buton {
-      font-size: 0.9vw ;
+     
       color: $butoncolor2;
       background: $butonbackground3;
       border: none;
@@ -206,12 +206,12 @@ export default {
     justify-content: space-between;
     align-items: center;
     border-top: 2px solid $color-30;
-    gap: 70px;
+    gap: 60px;
     &-box {
       &-button {
         color: $color-secondary;
         text-decoration: none;
-        font-size: 1.2vw;
+        
         font-weight: bold;
       }
     }
@@ -220,7 +220,7 @@ export default {
       border-radius: 8px;
       padding: 1em 2.1em 1em;
       font-weight: bold;
-      font-size: 1vw;
+    
       background-color: $color-secondary;
       color: $color-white;
       cursor: pointer;
@@ -234,12 +234,12 @@ export default {
     justify-content: space-between;
     &-column {
       display: flex;
-      font-size: 1vw;
+      
     }
     &-price {
       font-weight: bold;
-      font-size: 2vw;
-      margin-top: 60px;
+      font-size: 2em;
+      margin-top: 90px;
       color: $color-secondary;
     }
   }
