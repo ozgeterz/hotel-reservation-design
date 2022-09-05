@@ -252,7 +252,7 @@ export default {
   }
   &-img {
     width: 100%;
-    height: 97%;
+    height: 45%;
   }
   &-popup {
     width: 70%;
