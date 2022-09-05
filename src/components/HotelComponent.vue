@@ -217,8 +217,8 @@ export default {
       border: none;
       border-radius: 8px;
       padding: 1em 1.6em 1em;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      margin-bottom: 14px;
+      margin-top: 14px;
       cursor: pointer;
       font-size: 1vw;
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="card-group">
     <div class="card">
-      <img class="card-img" src="../image/oda1.jpg" alt="Card image cap" />
+      <img class="card-img" src="../image/otel-odasi-04.jpg" alt="Card image cap" />
       <div class="card-body">
         <h3 class="card-title">Standart Oda</h3>
         <div class="card-content-info">
@@ -24,7 +24,7 @@
               <p>Havlu</p>
             </div>
           </div>
-          <div class="card-features-price">1500 TL</div>
+          <div class="card-features-price"> ₺ 1.500</div>
         </div>
         <div class="card-info">
           <div class="card-info-box">
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="card">
-      <img class="card-img" src="../image/oda2.jpg" alt="Card image cap" />
+      <img class="card-img" src="../image/dime-otel-odasi-c6d3.jpg" alt="Card image cap" />
       <div class="card-body">
         <h3 class="card-title">İki Balkonlu Oda(Delux)</h3>
         <div class="card-content-info">
@@ -59,7 +59,7 @@
               <p>Havlu</p>
             </div>
           </div>
-          <div class="card-features-price">1500 TL</div>
+          <div class="card-features-price">₺ 1.500 </div>
         </div>
         <div class="card-info">
           <div class="card-info-box">
@@ -72,7 +72,7 @@
     </div>
     <div id="popup1" class="modal">
       <div class="modal-popup">
-        <img src="../image/oda1.jpg" class="modal-img" />
+        <img src="../image/pop-up1.jpg" class="modal-img" />
         <a class="modal-close" href="#">&times;</a>
         <div class="modal-content">
           <h2 class="modal-content-title">Standart Oda</h2>
@@ -145,7 +145,7 @@
           </div>
           <div class="modal-content-price">
             <div class="modal-content-price-info">
-              <h1 class="modal-content-price-tl">1.500TL</h1>
+              <h1 class="modal-content-price-tl">₺ 1.500</h1>
               <h5>22 gece için toplam tutardır.</h5>
             </div>
 
@@ -187,7 +187,7 @@ export default {
     }
   }
   &-img {
-    max-width: 35%;
+    max-width: 37%;
   }
   &-info {
     border-top: 2px solid $bordercolor2;
@@ -200,6 +200,8 @@ export default {
       &-button {
         color: $butonbackground2;
         text-decoration: none;
+       font-size: 1.3vw;
+      
       }
     }
     &-room {
@@ -226,6 +228,8 @@ export default {
     &-price {
       font-weight: bold;
       color: $butonbackground2;
+      font-size: 2vw;
+      margin-top: 60px;
     }
   }
 }
@@ -248,11 +252,11 @@ export default {
   }
   &-img {
     width: 100%;
-    height: 40%;
+    height: 97%;
   }
   &-popup {
     width: 70%;
-    height: 90%;
+    height: 97%;
     background: #fff;
     border-radius: 5px;
     position: relative;
