@@ -1,13 +1,17 @@
 <template>
   <div class="card-group">
     <div class="card">
-      <img class="card-img" src="../image/otel-odasi-04.jpg" alt="Card image cap" />
+      <img
+        class="card-img"
+        src="../image/otel-odasi-04.jpg"
+        alt="Card image cap"
+      />
       <div class="card-body">
         <h3 class="card-title">Standart Oda</h3>
         <div class="card-content-info">
           <button class="card-content-buton">Erken Rezervasyon İndirimi</button>
-          <button class="card-content-buton">Her Şey Dahil</button>
           <button class="card-content-buton">Ücretsiz İptal</button>
+          <button class="card-content-buton">Her Şey Dahil</button>
         </div>
         <div class="card-features">
           <div class="card-features-row">
@@ -24,11 +28,11 @@
               <p>Havlu</p>
             </div>
           </div>
-          <div class="card-features-price"> ₺ 1.500</div>
+          <div class="card-features-price">₺ 1.500</div>
         </div>
         <div class="card-info">
           <div class="card-info-box">
-            <h5>İki gece için toplam tutardır.</h5>
+            <p>İki gece için toplam tutardır.</p>
             <a class="card-info-box-button" href="#popup1">Detaylar</a>
           </div>
           <button class="card-info-room">Odanı Ayır &#10230;</button>
@@ -36,13 +40,17 @@
       </div>
     </div>
     <div class="card">
-      <img class="card-img" src="../image/dime-otel-odasi-c6d3.jpg" alt="Card image cap" />
+      <img
+        class="card-img"
+        src="../image/dime-otel-odasi-c6d3.jpg"
+        alt="Card image cap"
+      />
       <div class="card-body">
         <h3 class="card-title">İki Balkonlu Oda(Delux)</h3>
         <div class="card-content-info">
           <button class="card-content-buton">Erken Rezervasyon İndirimi</button>
-          <button class="card-content-buton">Her Şey Dahil</button>
           <button class="card-content-buton">Ücretsiz İptal</button>
+          <button class="card-content-buton">Her Şey Dahil</button>
         </div>
         <div class="card-features">
           <div class="card-features-row">
@@ -59,11 +67,11 @@
               <p>Havlu</p>
             </div>
           </div>
-          <div class="card-features-price">₺ 1.500 </div>
+          <div class="card-features-price">₺ 1.500</div>
         </div>
         <div class="card-info">
           <div class="card-info-box">
-            <h5>İki gece için toplam tutardır.</h5>
+            <p>İki gece için toplam tutardır.</p>
             <a class="card-info-box-button" href="#popup1">Detaylar</a>
           </div>
           <button class="card-info-room">Odanı Ayır &#10230;</button>
@@ -76,12 +84,12 @@
         <a class="modal-close" href="#">&times;</a>
         <div class="modal-content">
           <h2 class="modal-content-title">Standart Oda</h2>
-          <h5 class="modal-content-commen">
+          <p1 class="modal-content-commen">
             The purpose of lorem ipsum is to create a natural looking block of
             text(sentence,paragraph,page,etc.) that doesn't distract from the
             layout. A practice not without controversy, laying out pages with
             meaningless fillet text can be.
-          </h5>
+          </p1>
           <div class="modal-content-info">
             <button class="modal-content-buton">
               Erken Rezervasyon İndirimi
@@ -169,9 +177,12 @@ export default {
 @import "../assets/color.scss";
 
 .card {
-  border: 2px solid $bordercolor1;
   display: flex;
   margin-top: 20px;
+  border: 2px solid $color-40;
+  &-title {
+    font: normal normal bold 1.8vw Montserrat;
+  }
   &-content {
     &-info {
       display: grid;
@@ -179,7 +190,7 @@ export default {
       gap: 10px;
     }
     &-buton {
-      padding: 0.1rem;
+      font-size: 0.9vw ;
       color: $butoncolor2;
       background: $butonbackground3;
       border: none;
@@ -187,32 +198,32 @@ export default {
     }
   }
   &-img {
-    max-width: 37%;
+    max-width: 38%;
+   
   }
   &-info {
-    border-top: 2px solid $bordercolor2;
     display: flex;
     justify-content: space-between;
-    gap: 110px;
     align-items: center;
-
+    border-top: 2px solid $color-30;
+    gap: 70px;
     &-box {
       &-button {
-        color: $butonbackground2;
+        color: $color-secondary;
         text-decoration: none;
-       font-size: 1.3vw;
-      
+        font-size: 1.2vw;
+        font-weight: bold;
       }
     }
     &-room {
-      background-color: $butonbackground2;
-      color: $maincolor;
       border: none;
       border-radius: 8px;
-      cursor: pointer;
       padding: 1em 2.1em 1em;
       font-weight: bold;
       font-size: 1vw;
+      background-color: $color-secondary;
+      color: $color-white;
+      cursor: pointer;
     }
   }
   &-body {
@@ -223,13 +234,13 @@ export default {
     justify-content: space-between;
     &-column {
       display: flex;
-      font-size: 13px;
+      font-size: 1vw;
     }
     &-price {
       font-weight: bold;
-      color: $butonbackground2;
       font-size: 2vw;
       margin-top: 60px;
+      color: $color-secondary;
     }
   }
 }
@@ -257,7 +268,7 @@ export default {
   &-popup {
     width: 70%;
     height: 97%;
-    background: #fff;
+    background: $color-white;
     border-radius: 5px;
     position: relative;
     transition: all 5s ease-in-out;
@@ -273,15 +284,18 @@ export default {
   &-content {
     margin-left: 20px;
     margin-right: 20px;
+
     &-info {
       display: flex;
       gap: 5px;
     }
+
     &-buton {
       color: $butoncolor2;
       background: $butonbackground3;
       border: none;
       font-weight: bold;
+      margin-top:10px;
     }
     &-features {
       font-size: 1vw;
@@ -296,18 +310,18 @@ export default {
     }
     &-price {
       display: flex;
-      border-top: 2px solid $bordercolor2;
+      border-top: 2px solid $color-30;
       align-items: center;
       justify-content: space-between;
       &-tl {
-        color: $butonbackground2;
+        color: $color-secondary;
       }
       &-info {
         font-size: 1vw;
       }
       &-button {
-        background-color: $butonbackground2;
-        color: $maincolor;
+        background-color: $color-secondary;
+        color: $color-white;
         border: none;
         border-radius: 8px;
         padding: 1em 2.1em 1em;

@@ -67,15 +67,14 @@ export default {
 
 <!-- Use preprocessors via the lang attribute! e.g. <style lang="scss"> -->
 <style lang="scss" scoped>
+@import "../assets/color.scss";
 .slider {
   position: relative;
   &-dots {
     position: absolute;
     bottom: 15px;
     left: 50%;
-    padding: 10px;
-    background: #777777aa;
-    border-radius: 25px;
+    padding: 5px;
   }
   &-art {
     width: 100%;
@@ -84,7 +83,7 @@ export default {
   }
   .dot.active {
     width: 20px;
-    background: #ffff;
+    background:$color-white;
     border-radius: 8px;
   }
   .dot {
