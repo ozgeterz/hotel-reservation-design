@@ -154,7 +154,7 @@
           <div class="modal-content-price">
             <div class="modal-content-price-info">
               <h1 class="modal-content-price-tl">₺ 1.500</h1>
-              <h5>22 gece için toplam tutardır.</h5>
+              <p1>22 gece için toplam tutardır.</p1>
             </div>
 
             <button class="modal-content-price-button">
@@ -263,7 +263,7 @@ export default {
   }
   &-img {
     width: 100%;
-    height: 45%;
+    height: auto;
   }
   &-popup {
     width: 70%;
@@ -315,9 +315,10 @@ export default {
       justify-content: space-between;
       &-tl {
         color: $color-secondary;
+        font-size: large;
       }
       &-info {
-        font-size: 1vw;
+        font-size: 1em;
       }
       &-button {
         background-color: $color-secondary;
@@ -325,7 +326,7 @@ export default {
         border: none;
         border-radius: 8px;
         padding: 1em 2.1em 1em;
-        font-size: 1vw;
+    
         cursor: pointer;
       }
     }
