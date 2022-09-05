@@ -9,24 +9,29 @@
           <button class="card-content-buton">Her Şey Dahil</button>
           <button class="card-content-buton">Ücretsiz İptal</button>
         </div>
-        <div class="card-features-column">
-          <img src="../image/check-circle.svg" />
-          <p>Banyo</p>
-        </div>
-        <div class="card-features-column">
-          <img src="../image/check-circle.svg" />
-          <p>İnternet</p>
-        </div>
-        <div class="card-features-column">
-          <img src="../image/check-circle.svg" />
-          <p>Havlu</p>
+        <div class="card-features">
+          <div class="card-features-row">
+            <div class="card-features-column">
+              <img src="../image/check-circle.svg" />
+              <p>Banyo</p>
+            </div>
+            <div class="card-features-column">
+              <img src="../image/check-circle.svg" />
+              <p>İnternet</p>
+            </div>
+            <div class="card-features-column">
+              <img src="../image/check-circle.svg" />
+              <p>Havlu</p>
+            </div>
+          </div>
+          <div class="card-features-price">1500 TL</div>
         </div>
         <div class="card-info">
           <div class="card-info-box">
             <h5>İki gece için toplam tutardır.</h5>
             <a class="card-info-box-button" href="#popup1">Detaylar</a>
           </div>
-          <button class="card-info-room">Odanı Ayır</button>
+          <button class="card-info-room">Odanı Ayır &#10230;</button>
         </div>
       </div>
     </div>
@@ -39,25 +44,29 @@
           <button class="card-content-buton">Her Şey Dahil</button>
           <button class="card-content-buton">Ücretsiz İptal</button>
         </div>
-        <div class="card-features-column">
-          <img src="../image/check-circle.svg" />
-          <p>Banyo</p>
+        <div class="card-features">
+          <div class="card-features-row">
+            <div class="card-features-column">
+              <img src="../image/check-circle.svg" />
+              <p>Banyo</p>
+            </div>
+            <div class="card-features-column">
+              <img src="../image/check-circle.svg" />
+              <p>İnternet</p>
+            </div>
+            <div class="card-features-column">
+              <img src="../image/check-circle.svg" />
+              <p>Havlu</p>
+            </div>
+          </div>
+          <div class="card-features-price">1500 TL</div>
         </div>
-        <div class="card-features-column">
-          <img src="../image/check-circle.svg" />
-          <p>İnternet</p>
-        </div>
-        <div class="card-features-column">
-          <img src="../image/check-circle.svg" />
-          <p>Havlu</p>
-        </div>
-
         <div class="card-info">
           <div class="card-info-box">
             <h5>İki gece için toplam tutardır.</h5>
             <a class="card-info-box-button" href="#popup1">Detaylar</a>
           </div>
-          <button class="card-info-room">Odanı Ayır</button>
+          <button class="card-info-room">Odanı Ayır &#10230;</button>
         </div>
       </div>
     </div>
@@ -140,7 +149,9 @@
               <h5>22 gece için toplam tutardır.</h5>
             </div>
 
-            <button class="modal-content-price-button">Odanı Ayır</button>
+            <button class="modal-content-price-button">
+              Odanı Ayır &#10230;
+            </button>
           </div>
         </div>
       </div>
@@ -161,7 +172,6 @@ export default {
   border: 2px solid $bordercolor1;
   display: flex;
   margin-top: 20px;
-
   &-content {
     &-info {
       display: grid;
@@ -176,7 +186,6 @@ export default {
       font-weight: bold;
     }
   }
-
   &-img {
     max-width: 35%;
   }
@@ -184,38 +193,42 @@ export default {
     border-top: 2px solid $bordercolor2;
     display: flex;
     justify-content: space-between;
-    
+    gap: 110px;
     align-items: center;
 
     &-box {
-      
       &-button {
         color: $butonbackground2;
         text-decoration: none;
       }
     }
-
     &-room {
       background-color: $butonbackground2;
       color: $maincolor;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      padding: 1.5em 3.1em 1.5em;
-      
+      padding: 1em 2.1em 1em;
+      font-weight: bold;
+      font-size: 1vw;
     }
   }
   &-body {
     padding-inline-start: 2%;
   }
   &-features {
+    display: flex;
+    justify-content: space-between;
     &-column {
       display: flex;
       font-size: 13px;
     }
+    &-price {
+      font-weight: bold;
+      color: $butonbackground2;
+    }
   }
 }
-
 .modal {
   position: fixed;
   display: flex;
@@ -229,7 +242,6 @@ export default {
   visibility: hidden;
   opacity: 0;
   padding-left: 27%;
-
   &:target {
     visibility: visible;
     opacity: 1;
@@ -257,8 +269,6 @@ export default {
   &-content {
     margin-left: 20px;
     margin-right: 20px;
-  
-    
     &-info {
       display: flex;
       gap: 5px;
@@ -275,7 +285,6 @@ export default {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-top: 15px;
-
       &-column {
         display: flex;
         margin-top: -20px;
@@ -284,14 +293,12 @@ export default {
     &-price {
       display: flex;
       border-top: 2px solid $bordercolor2;
-
       align-items: center;
       justify-content: space-between;
-      &-tl{
-        color:$butonbackground2;
+      &-tl {
+        color: $butonbackground2;
       }
       &-info {
-        
         font-size: 1vw;
       }
       &-button {
@@ -300,6 +307,7 @@ export default {
         border: none;
         border-radius: 8px;
         padding: 1em 2.1em 1em;
+        font-size: 1vw;
         cursor: pointer;
       }
     }
@@ -315,7 +323,6 @@ export default {
     display: none;
   }
 }
-
 @media screen and (max-width: 1023px) {
   .modal-content-info {
     display: none;

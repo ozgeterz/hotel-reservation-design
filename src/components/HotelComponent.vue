@@ -14,16 +14,24 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-      <button class="turna-map-buton" >Haritada Göster</button>
+      <button class="turna-map-buton">Haritada Göster</button>
     </div>
     <div class="turna-hotel">
       <div class="turna-hotel-row">
-        <h2>Rixos Downtown Hotel (9.0)</h2>
+        <div class="turna-hotel-column">
+          <div class="turna-hotel-info">
+            <h2 class="turna-hotel-name">Rixos Downtown Hotel (9.0)</h2>
+            <img class="turna-hotel-star" src="../image/star (2).svg" />
+            <img class="turna-hotel-star" src="../image/star (2).svg" />
+            <img class="turna-hotel-star" src="../image/star (2).svg" />
+          </div>
+          <div class="turna-hotel-location">
+            <img src="../image/map-pin (3).svg">
+            Antalya,Merkez</div>
+        </div>
         <button class="turna-hotel-rezerv">Rezervasyon yap</button>
       </div>
-    
-      <ImageSlider/>
-
+      <ImageSlider />
       <h5>
         The purpose of lorem ipsum is to create a natural looking block of
         text(sentence,paragraph,page,etc.) that doesn't distract from the
@@ -148,7 +156,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import RoomInfo from "./RoomInfo.vue";
 import ImageSlider from "./ImageSlider.vue";
@@ -157,7 +164,6 @@ export default {
   name: "HotelComponent",
 };
 </script>
-
 <style lang="scss" scoped>
 @import "../assets/color.scss";
 .turna {
@@ -183,12 +189,24 @@ export default {
       height: 100%;
     }
   }
-
   &-hotel {
     &-img {
       width: 100%;
     }
-
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    &-location {
+     margin-top: -15px;
+     margin-bottom: 15px ;
+     font-size: 18px;
+    }
+    &-column {
+      display: flex;
+      flex-direction: column;
+    }
     &-row {
       display: flex;
       justify-content: space-between;
@@ -198,17 +216,19 @@ export default {
       color: $maincolor;
       border: none;
       border-radius: 8px;
-      padding: 1em 2.1em 1em;
-      margin-bottom: 10px;
+      padding: 1em 1.6em 1em;
+      margin-bottom: 20px;
+      margin-top: 20px;
       cursor: pointer;
+      font-size: 1vw;
     }
   }
+
   &-features {
     border-top: 2px solid $bordercolor2;
     margin-top: 20px;
     font-size: 14px;
     font-weight: bold;
-
     &-card {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -218,13 +238,18 @@ export default {
     }
   }
 }
-@media screen and (max-width:1023px) {  
+@media screen and (max-width: 1023px) {
   .check {
     display: none;
   }
 }
-@media screen and (max-width:1023px) {  
+@media screen and (max-width: 1023px) {
   .turna-map {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .turna-hotel-star {
     display: none;
   }
 }
