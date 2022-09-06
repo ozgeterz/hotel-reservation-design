@@ -22,7 +22,9 @@ setup() {
 
 <style>
 #app{
+  margin: 0 auto;
   max-width: 1250px;
-  
+  font-family: 'Montserrat', sans-serif;
+
 }
 </style>

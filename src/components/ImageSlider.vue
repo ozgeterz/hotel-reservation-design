@@ -80,6 +80,7 @@ export default {
     width: 100%;
     max-height: 70vh;
     transition: opacity 0.001s ease;
+    border-radius: 10px;
   }
   .dot.active {
     width: 20px;

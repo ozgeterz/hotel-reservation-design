@@ -9,33 +9,39 @@
       <div class="card-body">
         <h3 class="card-title">Standart Oda</h3>
         <div class="card-content-info">
-          <button class="card-content-buton">Erken Rezervasyon İndirimi</button>
-          <button class="card-content-buton">Ücretsiz İptal</button>
-          <button class="card-content-buton">Her Şey Dahil</button>
+          <p class="card-content-buton">Erken Rezervasyon İndirimi</p>
+          <p class="card-content-buton">Ücretsiz İptal</p>
+          <p class="card-content-buton">Her Şey Dahil</p>
         </div>
         <div class="card-features">
           <div class="card-features-row">
-            <div class="card-features-column">
-              <img src="../image/check-circle.svg" />
-              <p>Banyo</p>
+            <div class="card-features-icons">
+              <div class="card-features-column">
+                <img src="../image/checkmark.svg" />
+                <p1>Banyo</p1>
+              </div>
+              <div class="card-features-column">
+                <img src="../image/checkmark.svg" />
+                <p1>İnternet</p1>
+              </div>
+              <div class="card-features-column">
+                <img src="../image/checkmark.svg" />
+                <p1>Havlu</p1>
+              </div>
             </div>
-            <div class="card-features-column">
-              <img src="../image/check-circle.svg" />
-              <p>İnternet</p>
-            </div>
-            <div class="card-features-column">
-              <img src="../image/check-circle.svg" />
-              <p>Havlu</p>
+            <div class="card-features-price">
+              <p1 class="card-features-price-before">₺1.200</p1>
+              <p1 class="card-features-price-after"> ₺1.500</p1>
             </div>
           </div>
-          <div class="card-features-price">₺ 1.500</div>
-        </div>
-        <div class="card-info">
-          <div class="card-info-box">
-            <p>İki gece için toplam tutardır.</p>
-            <a class="card-info-box-button" href="#popup1">Detaylar</a>
+
+          <div class="card-info">
+            <div class="card-info-box">
+              <p>İki gece için toplam tutardır.</p>
+              <a class="card-info-box-button" href="#popup1">DETAYLAR</a>
+            </div>
+            <button class="card-info-room">Odayı Ayır &#10230;</button>
           </div>
-          <button class="card-info-room">Odanı Ayır &#10230;</button>
         </div>
       </div>
     </div>
@@ -48,33 +54,39 @@
       <div class="card-body">
         <h3 class="card-title">İki Balkonlu Oda(Delux)</h3>
         <div class="card-content-info">
-          <button class="card-content-buton">Erken Rezervasyon İndirimi</button>
-          <button class="card-content-buton">Ücretsiz İptal</button>
-          <button class="card-content-buton">Her Şey Dahil</button>
+          <p class="card-content-buton">Erken Rezervasyon İndirimi</p>
+          <p class="card-content-buton">Ücretsiz İptal</p>
+          <p class="card-content-buton">Her Şey Dahil</p>
         </div>
         <div class="card-features">
           <div class="card-features-row">
-            <div class="card-features-column">
-              <img src="../image/check-circle.svg" />
-              <p>Banyo</p>
+            <div class="card-features-icons">
+              <div class="card-features-column">
+                <img src="../image/checkmark.svg" />
+                <p1>Banyo</p1>
+              </div>
+              <div class="card-features-column">
+                <img src="../image/checkmark.svg" />
+                <p1>İnternet</p1>
+              </div>
+              <div class="card-features-column">
+                <img src="../image/checkmark.svg" />
+                <p1>Havlu</p1>
+              </div>
             </div>
-            <div class="card-features-column">
-              <img src="../image/check-circle.svg" />
-              <p>İnternet</p>
-            </div>
-            <div class="card-features-column">
-              <img src="../image/check-circle.svg" />
-              <p>Havlu</p>
+            <div class="card-features-price">
+              <p1 class="card-features-price-before">₺1.200</p1>
+              <p1 class="card-features-price-after"> ₺1.500</p1>
             </div>
           </div>
-          <div class="card-features-price">₺ 1.500</div>
-        </div>
-        <div class="card-info">
-          <div class="card-info-box">
-            <p>İki gece için toplam tutardır.</p>
-            <a class="card-info-box-button" href="#popup1">Detaylar</a>
+
+          <div class="card-info">
+            <div class="card-info-box">
+              <p>İki gece için toplam tutardır.</p>
+              <a class="card-info-box-button" href="#popup1">DETAYLAR</a>
+            </div>
+            <button class="card-info-room">Odayı Ayır &#10230;</button>
           </div>
-          <button class="card-info-room">Odanı Ayır &#10230;</button>
         </div>
       </div>
     </div>
@@ -100,55 +112,55 @@
           <div class="modal-content-features">
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Sauna</p>
+              <p class="modal-content-fature">Sauna</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Market</p>
+              <p class="modal-content-fature">Market</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Hamam</p>
+              <p class="modal-content-fature">Hamam</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Bar</p>
+              <p class="modal-content-fature">Bar</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Masaj</p>
+              <p class="modal-content-fature">Masaj</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Açık Restoran</p>
+              <p class="modal-content-fature">Açık Restoran</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Spa Merkezi</p>
+              <p class="modal-content-fature">Spa Merkezi</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Kapalı Restoran</p>
+              <p class="modal-content-fature">Kapalı Restoran</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Otelde Otopark</p>
+              <p class="modal-content-fature">Otelde Otopark</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Tv Salonu</p>
+              <p class="modal-content-fature">Tv Salonu</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Engelli Odaları</p>
+              <p class="modal-content-fature">Engelli Odaları</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Araç Kiralama</p>
+              <p class="modal-content-fature">Araç Kiralama</p>
             </div>
             <div class="modal-content-features-column">
               <img src="../image/check.svg" class="check" />
-              <p>Havaalanı</p>
+              <p class="modal-content-fature">Havaalanı</p>
             </div>
           </div>
           <div class="modal-content-price">
@@ -166,7 +178,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "RoomInfo",
@@ -175,74 +186,102 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/color.scss";
-
 .card {
   display: flex;
-  margin-top: 20px;
-  border: 2px solid $color-40;
+  margin-top: 35px;
+  border: 1px solid $color-40;
+  font-family: "Montserrat", sans-serif;
   &-title {
-    font: normal normal bold 20px Montserrat;
+    font-size: 26px;
+    color: $color-dark;
+    font-weight: bold;
+    margin-top: 28px;
   }
   &-content {
     &-info {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      margin-top: -22px;
+      font-size: 18px;
       gap: 10px;
     }
     &-buton {
-     
       color: $butoncolor2;
       background: $butonbackground3;
       border: none;
       font-weight: bold;
+      padding: 0.1em 0.3em 0.1em;
+      margin-bottom: -16px;
+      text-align: center;
     }
   }
   &-img {
-    max-width: 38%;
-   
+    max-width: 35%;
   }
   &-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid $color-30;
-    gap: 60px;
+    border-top: 1px solid $color-30;
+    gap: 170px;
+    margin-top: 20px;
+    padding-bottom: 30px;
     &-box {
       &-button {
         color: $color-secondary;
         text-decoration: none;
-        
+
         font-weight: bold;
       }
     }
     &-room {
       border: none;
       border-radius: 8px;
-      padding: 1em 2.1em 1em;
-      font-weight: bold;
-    
+      padding: 15px 30px;
+      margin-top: 22px;
+      font-size: 18px;
       background-color: $color-secondary;
       color: $color-white;
       cursor: pointer;
     }
   }
   &-body {
-    padding-inline-start: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
+
   &-features {
-    display: flex;
-    justify-content: space-between;
+    &-row {
+      display: flex;
+      gap: 60%;
+      margin-top: 30px;
+    }
     &-column {
       display: flex;
-      
+      gap: 7px;
+      margin-top: 8px;
     }
     &-price {
-      font-weight: bold;
-      font-size: 2em;
-      margin-top: 90px;
-      color: $color-secondary;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      &-before {
+        font-size: 1.3em;
+        text-decoration: line-through;
+        color: $color-60;
+      }
+      &-after {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 2.6em;
+
+        color: $color-secondary;
+      }
     }
   }
+}
+.card-group {
+  margin-top: 60px;
 }
 .modal {
   position: fixed;
@@ -257,6 +296,7 @@ export default {
   visibility: hidden;
   opacity: 0;
   padding-left: 27%;
+  font: normal normal medium 16px/19px "Montserrat";
   &:target {
     visibility: visible;
     opacity: 1;
@@ -285,17 +325,22 @@ export default {
     margin-left: 20px;
     margin-right: 20px;
 
+    &-commen {
+      font-size: 20px;
+    }
     &-info {
       display: flex;
-      gap: 5px;
-    }
 
+      gap: 12px;
+    }
     &-buton {
       color: $butoncolor2;
       background: $butonbackground3;
       border: none;
       font-weight: bold;
-      margin-top:10px;
+      margin-top: 10px;
+      font-size: 18px;
+      padding: 0.3em 0.8em 0.3em;
     }
     &-features {
       font-size: 1vw;
@@ -303,30 +348,39 @@ export default {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-top: 15px;
+      &-feature {
+        font-size: 18px;
+      }
       &-column {
         display: flex;
-        margin-top: -20px;
+        margin-top: -30px;
+        gap: 8px;
       }
     }
     &-price {
       display: flex;
-      border-top: 2px solid $color-30;
+      border-top: 1px solid $color-30;
       align-items: center;
       justify-content: space-between;
       &-tl {
         color: $color-secondary;
         font-size: large;
+        font-size: 40px;
+        margin-bottom: 12px;
       }
       &-info {
-        font-size: 1em;
+        color: $color-70;
+        font-size: 17px;
+        margin-top: -10px;
       }
       &-button {
-        background-color: $color-secondary;
-        color: $color-white;
         border: none;
         border-radius: 8px;
-        padding: 1em 2.1em 1em;
-    
+        padding: 1em 1.6em 1em;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: $color-secondary;
+        color: $color-white;
         cursor: pointer;
       }
     }

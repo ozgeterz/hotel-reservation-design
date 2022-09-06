@@ -1,11 +1,11 @@
 <template>
   <div class="turna">
     <div class="turna-map">
-      <h3>Otele Ulaşım</h3>
-      <p1>
+      <h4 class="turna-map-transport">Otele Ulaşım</h4>
+      <p class="turna-map-info">
         Antalya Şehir Merkezi, Sakıp Sabancı Bulvarı, Çimen Sokak,Antalya,
         Turkey, 07050
-      </p1>
+      </p>
       <iframe
         class="turna-map-location"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.1479517700386!2d30.672536199999993!3d36.886808699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c390340cb47fb9%3A0x272477432af34686!2sMeltem%2C%20Sak%C4%B1p%20Sabanc%C4%B1%20Blv.%2C%2007030%20Muratpa%C5%9Fa%2FAntalya!5e0!3m2!1str!2str!4v1661869547301!5m2!1str!2str"
@@ -21,24 +21,24 @@
         <div class="turna-hotel-column">
           <div class="turna-hotel-info">
             <h2 class="turna-hotel-name">Rixos Downtown Hotel (9.0)</h2>
+           
             <img class="turna-hotel-star" src="../image/star (2).svg" />
             <img class="turna-hotel-star" src="../image/star (2).svg" />
             <img class="turna-hotel-star" src="../image/star (2).svg" />
           </div>
           <div class="turna-hotel-location">
-            <img src="../image/map-pin (3).svg" />
-            Antalya,Merkez
+            <img  src="../image/map-pin (3).svg" />
+            <p1 class="turna-hotel-location-name">Antalya,Merkez</p1>
           </div>
         </div>
         <button class="turna-hotel-rezerv">Rezervasyon yap</button>
       </div>
       <ImageSlider />
-      <div class="turna-hotel-commen">
-        The purpose of lorem ipsum is to create a natural looking block of
-        text(sentence,paragraph,page,etc.) that doesn't distract from the
+      <p1 class="turna-hotel-commen">
+        The purpose of lorem ipsum is to create a natural looking block of text(sentence,paragraph,page,etc.) that doesn't distract from the
         layout. A practice not without controversy,laying out pages with
         meaningless filler text can be.
-      </div>
+      </p1>
       <room-info />
       <div class="turna-features">
         <h2>Otel Özellikleri</h2>
@@ -170,17 +170,26 @@ export default {
 .turna {
   display: flex;
   text-align: start;
-  padding-inline-start: 17%;
   gap: 25px;
   &-map {
-    max-width: 280px;
-    max-height: 180px;
+    width: 305px;
+    height: 190px;
+    &-transport {
+      color: $color-dark;
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+    &-info {
+      margin-bottom: 15px;
+      color: $color-70;
+    }
     &-buton {
       border-radius: 8px;
       border: 1px solid $color-secondary;
-      padding: 1em 8em 1em;
+      width: 305px;
+      height: 56px;
       font-weight: bold;
-      margin-top: 10px;
+      margin-top: 16px;
       color: $color-secondary;
       background: $color-secondary-light;
       cursor: pointer;
@@ -191,18 +200,27 @@ export default {
     }
   }
   &-hotel {
+    &-star{
+    margin-right: -10px;
+    }
     &-img {
       width: 100%;
     }
     &-info {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      gap: 16px;
     }
     &-location {
-      margin-top: -15px;
-      margin-bottom: 15px;
-      font-size: 18px;
+      display: flex;
+      margin-top: -10px;
+      margin-bottom: 24px;
+      
+      &-name{
+    
+        font-size: 17px;
+      color: $color-dark;
+      }
     }
     &-column {
       display: flex;
@@ -214,23 +232,24 @@ export default {
     }
     &-rezerv {
       border: none;
-      border-radius: 8px;
+      border-radius: 6px;
       padding: 1em 1.6em 1em;
-      margin-bottom: 14px;
-      margin-top: 14px;
-      font-size: 1vw;
+      margin-bottom: 22px;
+      margin-top: 19px;
+      font-size: 18px;
       background-color: $color-secondary;
       color: $color-white;
       cursor: pointer;
     }
     &-commen {
-      font-size: 1.3em;
+      font-size: 21px ;
+      text-align: left;
       color: $color-dark;
     }
   }
 
   &-features {
-    border-top: 2px solid $color-30;
+    border-top: 1px solid $color-30;
     margin-top: 20px;
     font-size: 15px;
     font-weight: lighter;
@@ -248,7 +267,7 @@ export default {
     display: none;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .turna-map {
     display: none;
   }
