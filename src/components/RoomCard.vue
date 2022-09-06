@@ -253,7 +253,7 @@ export default {
   &-features {
     &-row {
       display: flex;
-      gap: 60%;
+      gap: 310px;
       margin-top: 30px;
     }
     &-column {
