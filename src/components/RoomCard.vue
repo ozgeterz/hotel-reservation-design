@@ -268,6 +268,7 @@ export default {
       margin-top: 8px;
     }
     &-price {
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       text-align: right;   
@@ -336,7 +337,7 @@ export default {
     margin-right: 20px;
 
     &-commen {
-      font-size: 20px;
+      font-size:1vw;
     }
     &-info {
       display: flex;
@@ -374,7 +375,7 @@ export default {
       &-tl {
         color: $color-secondary;
         font-size: large;
-        font-size: 40px;
+        font-size: 2vw;
         margin-bottom: 12px;
       }
       &-info {
@@ -385,7 +386,7 @@ export default {
       &-button {
         border: none;
         border-radius: 8px;
-        padding: 1em 1.6em 1em;
+        padding: 1vw 1.6vw 1vw;
         font-weight: bold;
         font-size: 18px;
         background-color: $color-secondary;
