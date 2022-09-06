@@ -10,7 +10,9 @@
         <h3 class="card-title">Standart Oda</h3>
         <div class="card-content-info">
           <p class="card-content-buton">Erken Rezervasyon İndirimi</p>
-          <p class="card-content-buton">Ücretsiz İptal</p>
+          <p class="card-content-buton">Ücretsiz İptal
+            <img src="../image/alert-circle (1).svg">
+          </p>
           <p class="card-content-buton">Her Şey Dahil</p>
         </div>
         <div class="card-features">
@@ -40,7 +42,11 @@
               <p>İki gece için toplam tutardır.</p>
               <a class="card-info-box-button" href="#popup1">DETAYLAR</a>
             </div>
-            <button class="card-info-room">Odayı Ayır &#10230;</button>
+            <button class="card-info-room">
+              Odayı Ayır
+
+              <img src="../image/arrow-right.svg" />
+            </button>
           </div>
         </div>
       </div>
@@ -55,7 +61,9 @@
         <h3 class="card-title">İki Balkonlu Oda(Delux)</h3>
         <div class="card-content-info">
           <p class="card-content-buton">Erken Rezervasyon İndirimi</p>
-          <p class="card-content-buton">Ücretsiz İptal</p>
+          <p class="card-content-buton">Ücretsiz İptal
+            <img src="../image/alert-circle (1).svg">
+          </p>
           <p class="card-content-buton">Her Şey Dahil</p>
         </div>
         <div class="card-features">
@@ -85,7 +93,11 @@
               <p>İki gece için toplam tutardır.</p>
               <a class="card-info-box-button" href="#popup1">DETAYLAR</a>
             </div>
-            <button class="card-info-room">Odayı Ayır &#10230;</button>
+            <button class="card-info-room">
+              Odayı Ayır
+
+              <img src="../image/arrow-right.svg" />
+            </button>
           </div>
         </div>
       </div>
@@ -107,7 +119,9 @@
               Erken Rezervasyon İndirimi
             </button>
             <button class="modal-content-buton">Her Şey Dahil</button>
-            <button class="modal-content-buton">Ücretsiz İptal</button>
+            <button class="modal-content-buton">Ücretsiz İptal
+              <img src="../image/alert-circle (1).svg">
+            </button>
           </div>
           <div class="modal-content-features">
             <div class="modal-content-features-column">
@@ -170,7 +184,9 @@
             </div>
 
             <button class="modal-content-price-button">
-              Odanı Ayır &#10230;
+              Odayı Ayır
+
+              <img src="../image/arrow-right.svg" />
             </button>
           </div>
         </div>
@@ -186,11 +202,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/color.scss";
+@import "../assets/font.scss";
 .card {
   display: flex;
   margin-top: 35px;
   border: 1px solid $color-40;
- 
+
   &-title {
     font-size: 26px;
     color: $color-dark;
@@ -198,9 +215,9 @@ export default {
     margin-top: 28px;
   }
   &-content {
-    
     &-info {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
       margin-top: -22px;
       font-size: 18px;
@@ -220,7 +237,6 @@ export default {
     max-width: 35%;
   }
   &-info {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,6 +253,8 @@ export default {
       }
     }
     &-room {
+      display: flex;
+      gap:4px;
       border: none;
       border-radius: 8px;
       padding: 15px 30px;
@@ -250,16 +268,15 @@ export default {
   &-body {
     margin-left: 3%;
     margin-right: 3%;
-  
   }
 
   &-features {
-    &-icons{
+    &-icons {
       margin-top: 8px;
     }
     &-row {
       display: flex;
-      gap:320px;
+      gap: 320px;
       margin-top: 20px;
     }
     &-column {
@@ -271,8 +288,8 @@ export default {
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      text-align: right;   
-       
+      text-align: right;
+
       &-before {
         font-size: 20px;
         text-decoration: line-through;
@@ -304,9 +321,9 @@ export default {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  padding-left: 27%;
+  padding-left: 23%;
   height: 100vh;
-  
+
   font: normal normal medium 16px/19px "Montserrat";
   &:target {
     visibility: visible;
@@ -314,11 +331,11 @@ export default {
   }
   &-img {
     width: 100%;
-    height: auto;
+    
   }
   &-popup {
     width: 70%;
-    height: 97%;
+    height: 99%;
     background: $color-white;
     border-radius: 5px;
     position: relative;
@@ -337,7 +354,7 @@ export default {
     margin-right: 20px;
 
     &-commen {
-      font-size:1vw;
+      font-size: 20px;
     }
     &-info {
       display: flex;
@@ -348,16 +365,16 @@ export default {
       background: $butonbackground3;
       border: none;
       font-weight: bold;
-      margin-top: 10px;
+      margin-top: 20px;
       font-size: 18px;
       padding: 0.3em 0.8em 0.3em;
     }
     &-features {
-      font-size: 1vw;
-      font-weight: 500;
+      font-size: 20px;
+     
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      margin-top: 15px;
+      margin-top: 25px;
       &-feature {
         font-size: 18px;
       }
@@ -384,6 +401,8 @@ export default {
         margin-top: -10px;
       }
       &-button {
+        display: flex;
+        gap:4px;
         border: none;
         border-radius: 8px;
         padding: 1vw 1.6vw 1vw;
@@ -401,6 +420,7 @@ export default {
     display: none;
   }
 }
+
 @media screen and (max-width: 1023px) {
   .modal-content-features {
     display: none;

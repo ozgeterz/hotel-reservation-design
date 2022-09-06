@@ -167,10 +167,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../assets/color.scss";
+@import "../assets/font.scss";
+
 .turna {
   display: flex;
   text-align: start;
   gap: 25px;
+  
   &-map {
     width: 305px;
     height: 190px;
@@ -246,6 +249,10 @@ export default {
       font-size: 20px ;
       text-align: left;
       color: $color-dark;
+     
+     
+    
+      
       
     
     }
@@ -270,7 +277,7 @@ export default {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .turna-map {
     display: none;
   }
