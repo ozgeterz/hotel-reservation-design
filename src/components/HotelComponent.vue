@@ -205,6 +205,7 @@ export default {
     }
     &-img {
       width: 100%;
+     
     }
     &-info {
       display: flex;
@@ -242,9 +243,11 @@ export default {
       cursor: pointer;
     }
     &-commen {
-      font-size: 21px ;
+      font-size: 20px ;
       text-align: left;
       color: $color-dark;
+      
+    
     }
   }
 

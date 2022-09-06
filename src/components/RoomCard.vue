@@ -190,7 +190,7 @@ export default {
   display: flex;
   margin-top: 35px;
   border: 1px solid $color-40;
-  font-family: "Montserrat", sans-serif;
+ 
   &-title {
     font-size: 26px;
     color: $color-dark;
@@ -198,6 +198,7 @@ export default {
     margin-top: 28px;
   }
   &-content {
+    
     &-info {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -219,6 +220,7 @@ export default {
     max-width: 35%;
   }
   &-info {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -248,13 +250,17 @@ export default {
   &-body {
     margin-left: 3%;
     margin-right: 3%;
+  
   }
 
   &-features {
+    &-icons{
+      margin-top: 8px;
+    }
     &-row {
       display: flex;
-      gap: 310px;
-      margin-top: 30px;
+      gap:320px;
+      margin-top: 20px;
     }
     &-column {
       display: flex;
@@ -264,16 +270,18 @@ export default {
     &-price {
       display: flex;
       flex-direction: column;
-      text-align: right;
+      text-align: right;   
+       
       &-before {
-        font-size: 1.3em;
+        font-size: 20px;
         text-decoration: line-through;
         color: $color-60;
+        margin-top: 20px;
       }
       &-after {
         margin-top: 20px;
         font-weight: bold;
-        font-size: 2.6em;
+        font-size: 40px;
 
         color: $color-secondary;
       }
@@ -281,7 +289,7 @@ export default {
   }
 }
 .card-group {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .modal {
   position: fixed;
@@ -296,6 +304,8 @@ export default {
   visibility: hidden;
   opacity: 0;
   padding-left: 27%;
+  height: 100vh;
+  
   font: normal normal medium 16px/19px "Montserrat";
   &:target {
     visibility: visible;
@@ -330,7 +340,6 @@ export default {
     }
     &-info {
       display: flex;
-
       gap: 12px;
     }
     &-buton {
