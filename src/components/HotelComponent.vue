@@ -21,13 +21,13 @@
         <div class="turna-hotel-column">
           <div class="turna-hotel-info">
             <h2 class="turna-hotel-name">Rixos Downtown Hotel (9.0)</h2>
-           
+
             <img class="turna-hotel-star" src="../image/star (2).svg" />
             <img class="turna-hotel-star" src="../image/star (2).svg" />
             <img class="turna-hotel-star" src="../image/star (2).svg" />
           </div>
           <div class="turna-hotel-location">
-            <img  src="../image/map-pin (3).svg" />
+            <img src="../image/map-pin (3).svg" />
             <p1 class="turna-hotel-location-name">Antalya,Merkez</p1>
           </div>
         </div>
@@ -35,7 +35,8 @@
       </div>
       <ImageSlider />
       <p1 class="turna-hotel-commen">
-        The purpose of lorem ipsum is to create a natural looking block of text(sentence,paragraph,page,etc.) that doesn't distract from the
+        The purpose of lorem ipsum is to create a natural looking block of
+        text(sentence,paragraph,page,etc.) that doesn't distract from the
         layout. A practice not without controversy,laying out pages with
         meaningless filler text can be.
       </p1>
@@ -171,9 +172,7 @@ export default {
 
 .turna {
   display: flex;
-  text-align: start;
   gap: 25px;
-  
   &-map {
     width: 305px;
     height: 190px;
@@ -203,27 +202,24 @@ export default {
     }
   }
   &-hotel {
-    &-star{
-    margin-right: -10px;
+    &-star {
+      margin-right: -10px;
     }
     &-img {
       width: 100%;
-     
     }
     &-info {
       display: flex;
-      justify-content: space-between;
       gap: 16px;
     }
     &-location {
       display: flex;
       margin-top: -10px;
       margin-bottom: 24px;
-      
-      &-name{
-    
+
+      &-name {
         font-size: 17px;
-      color: $color-dark;
+        color: $color-dark;
       }
     }
     &-column {
@@ -246,15 +242,9 @@ export default {
       cursor: pointer;
     }
     &-commen {
-      font-size: 20px ;
+      font-size: 20px;
       text-align: left;
       color: $color-dark;
-     
-     
-    
-      
-      
-    
     }
   }
 

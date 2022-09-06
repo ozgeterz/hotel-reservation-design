@@ -72,9 +72,11 @@ export default {
   position: relative;
   &-dots {
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     left: 50%;
     padding: 5px;
+    transform: translate(-50%);
+
   }
   &-art {
     width: 100%;

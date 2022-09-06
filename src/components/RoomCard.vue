@@ -10,8 +10,9 @@
         <h3 class="card-title">Standart Oda</h3>
         <div class="card-content-info">
           <p class="card-content-buton">Erken Rezervasyon İndirimi</p>
-          <p class="card-content-buton">Ücretsiz İptal
-            <img src="../image/alert-circle (1).svg">
+          <p class="card-content-buton">
+            Ücretsiz İptal
+            <img src="../image/alert-circle (1).svg" />
           </p>
           <p class="card-content-buton">Her Şey Dahil</p>
         </div>
@@ -39,8 +40,11 @@
 
           <div class="card-info">
             <div class="card-info-box">
-              <p>İki gece için toplam tutardır.</p>
-              <a class="card-info-box-button" href="#popup1">DETAYLAR</a>
+              <p class="card-info-box-text">İki gece için toplam tutardır.</p>
+              <a class="card-info-box-button" href="#popup1">
+                <img src="../image/alert-circle (2).svg" alt="" />
+                DETAYLAR</a
+              >
             </div>
             <button class="card-info-room">
               Odayı Ayır
@@ -61,8 +65,9 @@
         <h3 class="card-title">İki Balkonlu Oda(Delux)</h3>
         <div class="card-content-info">
           <p class="card-content-buton">Erken Rezervasyon İndirimi</p>
-          <p class="card-content-buton">Ücretsiz İptal
-            <img src="../image/alert-circle (1).svg">
+          <p class="card-content-buton">
+            Ücretsiz İptal
+            <img src="../image/alert-circle (1).svg" />
           </p>
           <p class="card-content-buton">Her Şey Dahil</p>
         </div>
@@ -90,8 +95,11 @@
 
           <div class="card-info">
             <div class="card-info-box">
-              <p>İki gece için toplam tutardır.</p>
-              <a class="card-info-box-button" href="#popup1">DETAYLAR</a>
+              <p class="card-info-box-text">İki gece için toplam tutardır.</p>
+              <a class="card-info-box-button" href="#popup1">
+                <img src="../image/alert-circle (2).svg" alt="" />
+                DETAYLAR</a
+              >
             </div>
             <button class="card-info-room">
               Odayı Ayır
@@ -119,8 +127,9 @@
               Erken Rezervasyon İndirimi
             </button>
             <button class="modal-content-buton">Her Şey Dahil</button>
-            <button class="modal-content-buton">Ücretsiz İptal
-              <img src="../image/alert-circle (1).svg">
+            <button class="modal-content-buton">
+              Ücretsiz İptal
+              <img src="../image/alert-circle (1).svg" />
             </button>
           </div>
           <div class="modal-content-features">
@@ -216,25 +225,24 @@ export default {
   }
   &-content {
     &-info {
-      display: grid;
-
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
       margin-top: -22px;
-      font-size: 18px;
+
       gap: 10px;
     }
     &-buton {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
       color: $butoncolor2;
       background: $butonbackground3;
-      border: none;
-      font-weight: bold;
-      padding: 0.1em 0.3em 0.1em;
-      margin-bottom: -16px;
-      text-align: center;
+      font-size: 14px;
+      padding: 7px;
     }
   }
   &-img {
-    max-width: 35%;
+    max-width: 38%;
   }
   &-info {
     display: flex;
@@ -245,7 +253,13 @@ export default {
     margin-top: 20px;
     padding-bottom: 30px;
     &-box {
+      &-text {
+        color: $color-80;
+      }
       &-button {
+        display: flex;
+        align-items: center;
+        gap: 6px;
         color: $color-secondary;
         text-decoration: none;
 
@@ -254,10 +268,11 @@ export default {
     }
     &-room {
       display: flex;
-      gap:4px;
+      align-items: center;
+      gap: 4px;
       border: none;
       border-radius: 8px;
-      padding: 15px 30px;
+      padding: 15px ;
       margin-top: 22px;
       font-size: 18px;
       background-color: $color-secondary;
@@ -269,7 +284,6 @@ export default {
     margin-left: 3%;
     margin-right: 3%;
   }
-
   &-features {
     &-icons {
       margin-top: 8px;
@@ -331,7 +345,6 @@ export default {
   }
   &-img {
     width: 100%;
-    
   }
   &-popup {
     width: 70%;
@@ -371,7 +384,7 @@ export default {
     }
     &-features {
       font-size: 20px;
-     
+
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-top: 25px;
@@ -402,7 +415,7 @@ export default {
       }
       &-button {
         display: flex;
-        gap:4px;
+        gap: 4px;
         border: none;
         border-radius: 8px;
         padding: 1vw 1.6vw 1vw;
@@ -416,11 +429,17 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
-  .card-img {
-    display: none;
+  .card {
+    display: flex;
+    flex-direction: column ;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .card-img {
+   width: 100%;
+  }
+}
 @media screen and (max-width: 1023px) {
   .modal-content-features {
     display: none;
