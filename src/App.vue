@@ -1,30 +1,27 @@
 <template>
   <div id="app">
-    <hotel-component/>
+    <hotel-component />
   </div>
 </template>
 
 <script>
-import HotelComponent from './components/HotelComponent.vue';
+import HotelComponent from "./components/HotelComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HotelComponent,
-   
-},
-setup() {
+  },
+  setup() {
     return {};
   },
-
-}
+};
 </script>
 
 <style>
-#app{
+#app {
   margin: 0 auto;
   max-width: 1250px;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 </style>

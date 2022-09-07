@@ -216,7 +216,6 @@ export default {
   display: flex;
   margin-top: 35px;
   border: 1px solid $color-40;
-
   &-title {
     font-size: 26px;
     color: $color-dark;
@@ -262,7 +261,6 @@ export default {
         gap: 6px;
         color: $color-secondary;
         text-decoration: none;
-
         font-weight: bold;
       }
     }
@@ -272,7 +270,8 @@ export default {
       gap: 4px;
       border: none;
       border-radius: 8px;
-      padding: 15px ;
+      padding: 1em 1.6em 1em;
+      white-space: nowrap;
       margin-top: 22px;
       font-size: 18px;
       background-color: $color-secondary;
@@ -337,8 +336,6 @@ export default {
   opacity: 0;
   padding-left: 23%;
   height: 100vh;
-
-  font: normal normal medium 16px/19px "Montserrat";
   &:target {
     visibility: visible;
     opacity: 1;
@@ -431,15 +428,10 @@ export default {
 @media screen and (max-width: 767px) {
   .card {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .card-img {
-   width: 100%;
-  }
-}
 @media screen and (max-width: 1023px) {
   .modal-content-features {
     display: none;
