@@ -254,6 +254,8 @@ export default {
     &-box {
       &-text {
         color: $color-80;
+        white-space: nowrap;
+
       }
       &-button {
         display: flex;
