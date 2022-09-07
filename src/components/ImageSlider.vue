@@ -64,8 +64,6 @@ export default {
   },
 };
 </script>
-
-<!-- Use preprocessors via the lang attribute! e.g. <style lang="scss"> -->
 <style lang="scss" scoped>
 @import "../assets/color.scss";
 .slider {

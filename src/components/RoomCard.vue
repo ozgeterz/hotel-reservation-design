@@ -431,7 +431,6 @@ export default {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 1023px) {
   .modal-content-features {
     display: none;

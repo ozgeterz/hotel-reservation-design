@@ -247,7 +247,6 @@ export default {
       color: $color-dark;
     }
   }
-
   &-features {
     border-top: 1px solid $color-30;
     margin-top: 20px;
