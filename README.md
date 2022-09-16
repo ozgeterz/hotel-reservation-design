@@ -1,4 +1,4 @@
-# turna-com
+# Hotel Reservation Design
 
 ## Here the trying link :https://turna-com-ozgeterz.vercel.app/
 
